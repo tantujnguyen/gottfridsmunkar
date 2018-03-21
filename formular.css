@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Century Gothic', 'Futura', 'Didactic Gothic', sans-serif;
+    background-color: #FFB5E8;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+hr{
+    width: 150px;
+    height: 2px;
+    background-color: #000;
+    border: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #FFF;
+}
+
+.box{
+    min-width: 320px;
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    background-color:rgba(255,255,255,0.92);
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 1.5em;
+    margin-bottom: 0.6em;
+    margin-top: 0.6em;
+}
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-child{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+/* Products - checkboxes and number inputs styling */
+.product{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center center;
+    margin-bottom: 1em;
+}
+
+.product-img, .product-desc, .product-num{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product-desc{
+     min-height: 50px;
+}
+
+.product-num{
+    padding: 10px;
+}
+
+.product-desc > label{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.product-desc > span{
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.product-num > label{
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.quantity{
+    border: none;
+    width: 40px;
+    font: inherit;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Counter styling */
+.count-box{
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: #FFF;
+    min-width: 300px;
+    height: 90%;
+}
+
+.flex-child > span{
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.form-box{
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    width: 90%;
+}
+
+#cost{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+ul{
+    list-style: none;
+    font: inherit;
+}
+
+/* Form styling */
+.btn{
+    display: inline-block;
+    background-color: #FFF;
+    border: 2px #000 solid;
+    width: 180px;
+    font: inherit;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0.5em 0 0.5em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    background-color: #000;
+    color: #FFF;
+}
+
+input[placeholder]{
+    font: inherit;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#firstname, #lastname, #telefon, #email{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px #000 solid;
+}
+
+#firstname:focus, #lastname:focus, #telefon:focus, #email:focus{
+    border: 2px #FFB5E8 solid;
+}
+
+footer{
+    padding: 20px;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+@media screen and (min-width: 599px and max-width: 899px){
+    .product{
+        max-width: calc(50% - 1em);
+    }
+
+    .flex-child{
+        flex: 2;
+    }
+
+    .count-box{
+        width: 100%;
+        min-height: 200px;
+        max-height: 80%;
+    }
+}
+
+@media screen and (min-width: 900px){
+    body{
+        background-image: url("donut.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .box{
+        min-width: 800px;
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        padding: 10px 0 10px 20px;
+        transform: translate(-50%, -50%);
+    }
+
+    .flex-box{
+        flex-basis: auto;
+        flex-direction: row;
+    }
+
+    .product{
+        max-width: calc(25% - 1em);
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .product-img > img{
+        max-width: 90%;
+        transition: transform 1s ease;
+    }
+
+    .product-img > img:hover{
+        transform: rotate(180deg);
+    }
+
+    .product-num{
+        vertical-align: baseline;
+    }
+
+    .btn{
+        width: 200px;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    input[placeholder]{
+        font-size: 1.5em;
+    }
+
+    .flex-child{
+        flex: 1 50%;
+        justify-content: center;
+    }
+    .count-box{
+        width: 100%;
+        min-height: 250px;
+        max-height: 80%;
+    }
+
+    .form-box{
+        width: 100%;
+    }
+
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: -5;
+        padding: 10px;
+    }
+}
+
+

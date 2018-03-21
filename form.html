@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulär - GOTTFRIDS MUNKAR</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="logo-icon-01.png">
+
+    <!-- custom font -->
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="formular.css">
+
+</head>
+
+<body>
+    <main class="box">
+        <h1>GOTTFRIDS MUNKAR</h1>
+        <hr>
+        <form id="formular">
+        <!-- Upper part -->
+        <section class="flex-box">
+           <!-- first donut -->
+            <div class="product">
+               <div class="product-img"><img src="Artboard%201.png" alt="strawberry"></div>
+               <div class="product-desc"><label for="strawberry">strawberry</label><br><p>Strawberries are the best. Cute, red, and yummy. <br><span class="price"><b>10 kr</b></span></p></div>
+               <div class="product-num">
+                  <label>VÄLJ:</label><input type="checkbox" id="strawberry" value="STRAWBERRY" name="donut"><br>
+                  <label>ANGE ANTAL:</label>
+                  <input class="quantity" value="0" size="3" id="qnt_0" type="text" data-price="10" onchange="calc()">
+               </div>
+            </div>
+
+            <!-- second donut -->
+            <div class="product">
+                <div class="product-img"><img src="Artboard%2013.png" alt="choco"></div>
+                <div class="product-desc"><label for="choco">choco</label><br><p>Chocolate is always good. Anyday, anytime. <br><span class="price"><b>12 kr</b></span></p></div>
+                <div class="product-num">
+                   <label>VÄLJ:</label><input type="checkbox" id="choco" value="CHOCO" name="donut"><br>
+                   <label> ANGE ANTAL:</label><input class="quantity" value="0" size="3" id="qnt_1" type="text" data-price="12" onchange="calc()">
+                </div>
+            </div>
+
+            <!-- third donut -->
+            <div class="product">
+                <div class="product-img"><img src="Artboard%203.png" alt="carrot"></div>
+                <div class="product-desc"><label for="carrot">carrot</label><br><p>Carrot is healthy. Not really this one. <br><span class="price"><b>12 kr</b></span></p>
+                </div>
+                <div class="product-num">
+                    <label>VÄLJ:</label><input type="checkbox" id="carrot" value="CARROT" name="donut"><br>
+                    <label> ANGE ANTAL:</label><input class="quantity" value="0" size="3" id="qnt_2" type="text" data-price="12" onchange="calc()">
+                </div>
+            </div>
+
+            <!-- fourth donut -->
+            <div class="product">
+                <div class="product-img"><img src="Artboard%2012.png" alt="seed"></div>
+                <div class="product-desc"><label for="seed">SEED</label><br><p>Sunflower seeds will make you happy. <br><span class="price"><b>14 kr</b></span></p></div>
+                <div class="product-num">
+                    <label>VÄLJ:</label><input type="checkbox" id="seed" value="SEED" name="donut"><br>
+                    <label> ANGE ANTAL:</label><input class="quantity" value="0" size="3" id="qnt_3" type="text" data-price="14" onchange="calc()">
+                </div>
+            </div>
+        </section>
+
+        <!-- Lower part -->
+        <section class="flex-box">
+          <!-- Counter -->
+           <div class="flex-child">
+               <div class="count-box">
+                <h3>DIN BESTÄLLNING:</h3>
+                <ul id="cart"></ul>
+                <br>
+                <hr>
+                 <h3>ATT BETALA:</h3>
+                 <div id="cost"></div>
+                 <br>
+                 <ul id="userInfo"></ul>
+                 <div id="warning"></div>
+               </div>
+               <span>*Välj munksorten innan du anger antalet för att beräknad kostnad ska visas. Ej vald munksort kommer inte att räknas med. </span>
+           </div>
+
+           <!-- Form -->
+           <div class="flex-child">
+               <div class="form-box">
+                    <label for="firstName"><input type="text" id="firstname" placeholder="förnamn"></label>
+                    <label for="lastName"><input type="text" id="lastname" placeholder="efternamn"></label>
+                    <label for="phoneNumber"><input type="text" id="telefon" placeholder="telefon"></label>
+                    <label for="eMail"><input type="email" id="email" placeholder="e-post"></label><br>
+                    <button class="btn" id="submit">BESTÄLL</button>
+               </div>
+           </div>
+
+        </section>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>MADE WITH ❤️ BY <a href="www.github.com/tantujnguyen">TANTUJ</a></p>
+    </footer>
+    <!-- Script -->
+    <script src="formularz.js"></script>
+
+</body>
+</html>
