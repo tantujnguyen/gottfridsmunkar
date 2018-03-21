@@ -3,6 +3,15 @@ An order form for fictive company *Gottfrids munkar* made for course in web deve
 
 ## Description
 First project in web development entirely focused on the front-end. Took me about 5 full days to complete. Kinda happy with the result, since it's first such project.
+
+Desktop version:
+![desktop](form.png)
+
+Tablet version:
+![tablet](768.png)
+
+Mobile version:
+![mobile](480.png)
  
 ### Requirements for PASS (G)
 The form shall consist of input fields for: 
@@ -31,7 +40,7 @@ The code shall be written well and with indentation.
 The form shall show the cost of order.
 
 ### Grade
-The project was graded by Maria Hellqvist 16.03.2018 with VG+. 
+The project was graded 16.03.2018 with VG+. 
 
 ## Acknowledgements
 Thank you Stackoverflow. Bless that community. 
