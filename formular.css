@@ -215,7 +215,7 @@ footer{
 
 @media screen and (min-width: 900px){
     body{
-        background-image: url("donut.gif");
+        background-image: url("/img/donut.gif");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;

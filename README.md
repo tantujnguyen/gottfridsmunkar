@@ -4,14 +4,17 @@ An order form for fictive company *Gottfrids munkar* made for course in web deve
 ## Description
 First project in web development entirely focused on the front-end. Took me about 5 full days to complete. Kinda happy with the result, since it's first such project.
 
-Desktop version:
-![desktop](form.png)
+**Desktop version**:
 
-Tablet version:
-![tablet](768.png)
+![desktop](/img/form.png)
 
-Mobile version:
-![mobile](480.png)
+**Tablet version**:
+
+![tablet](/img/768.png)
+
+**Mobile version**:
+
+![mobile](/img/480.png)
  
 ### Requirements for PASS (G)
 The form shall consist of input fields for: 
